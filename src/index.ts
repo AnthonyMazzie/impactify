@@ -17,45 +17,6 @@ try {
 	process.exit(1);
 }
 
-// function toSentenceCasePreservingAcronyms(text: string): string {
-// 	if (!text) {
-// 		return text;
-// 	}
-
-// 	const acronymMap = new Map(
-// 		acronymEntries.map(entry => [entry.acronym.toLowerCase(), entry.acronym]),
-// 	);
-
-// 	const words = text.trim().split(/\s+/);
-
-// 	return words
-// 		.map((word, index) => {
-// 			if (/^(`.*`|".*"|'.*')$/.test(word)) {
-// 				return word;
-// 			}
-
-// 			const match = /^(.+?)([.,!?;:]*)$/.exec(word);
-// 			if (!match) {
-// 				return word;
-// 			}
-
-// 			const [_, rawWord, punctuation = ''] = match;
-// 			const lower = rawWord.toLowerCase();
-// 			const canonical = acronymMap.get(lower);
-
-// 			if (canonical) {
-// 				return canonical + punctuation;
-// 			}
-
-// 			if (index === 0) {
-// 				return capitalize(rawWord) + punctuation;
-// 			}
-
-// 			return rawWord.toLowerCase() + punctuation;
-// 		})
-// 		.join(' ');
-// }
-
 function toSentenceCasePreservingAcronyms(text: string): string {
 	if (!text) {
 		return text;
