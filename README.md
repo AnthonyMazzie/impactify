@@ -1,4 +1,4 @@
-# Impactify
+# impactify
 
 ![Node.js](https://img.shields.io/badge/Node.js-v22.16-brightgreen)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.6.2-blue.svg)
@@ -14,7 +14,7 @@
 5. [Contributing](#contributing)
 6. [License](#license)
 
-Introduction
+## Introduction
 Let’s be honest, engineers are great at building things, but when it comes to explaining the impact of what we've built, it’s not always easy. We know we’ve improved performance, saved time, or reduced costs, but putting that into words that actually make sense to others? That’s the tricky part.
 
 That’s where impactify comes in. It helps you turn your work into a clear, concise impact statement in seconds. You just tell it what you did, how it helped the business, and what results you achieved. It’ll clean everything up and format it perfectly. No worrying about punctuation, capitalization, or handling acronyms.
