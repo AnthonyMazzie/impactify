@@ -1,0 +1,87 @@
+{
+    "name": "impactify",
+    "version": "0.1.0",
+    "description": "A CLI tool to help engineers generate high-impact performance review or resume statements using a 5-layer framework.",
+    "type": "module",
+    "bin": {
+        "impactify": "./dist/index.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "test": "vitest run",
+        "test:coverage": "vitest run --coverage",
+        "lint": "xo",
+        "prepare": "npm run build",
+        "format": "xo --fix"
+    },
+    "files": [
+        "dist",
+        "LICENSE",
+        "README.md"
+    ],
+    "keywords": [
+        "cli",
+        "developer tools",
+        "resume",
+        "performance review",
+        "engineering impact",
+        "productivity",
+        "typescript"
+    ],
+    "author": "Anthony Mazzie (https://github.com/AnthonyMazzie)",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AnthonyMazzie/impactify.git"
+    },
+    "bugs": {
+        "url": "https://github.com/AnthonyMazzie/impactify/issues"
+    },
+    "homepage": "https://github.com/AnthonyMazzie/impactify#readme",
+    "devDependencies": {
+        "@types/node": "^20.11.30",
+        "@vitest/coverage-v8": "^3.2.4",
+        "typescript": "^5.6.2",
+        "vitest": "^3.2.4",
+        "xo": "^0.59.3"
+    },
+    "dependencies": {
+        "clipboardy": "^4.0.0",
+        "depcheck": "^1.4.7"
+    },
+    "xo": {
+        "extends": [
+            "xo-typescript"
+        ],
+        "extensions": [
+            "ts"
+        ],
+        "rules": {
+            "unicorn/expiring-todo-comments": "off",
+            "n/prefer-global/process": "off",
+            "unicorn/no-process-exit": "off"
+        },
+        "ignores": [
+            "test/**",
+            "node_modules/**",
+            "jest.config.js"
+        ]
+    },
+    "vitest": {
+        "coverage": {
+            "provider": "c8",
+            "reporter": [
+                "text",
+                "html"
+            ],
+            "reportsDirectory": "./coverage",
+            "include": [
+                "src/**/*.{ts,tsx}",
+                "test/**/*.{ts,tsx}"
+            ],
+            "exclude": [
+                "node_modules"
+            ]
+        }
+    }
+}

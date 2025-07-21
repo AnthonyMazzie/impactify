@@ -1,0 +1,538 @@
+[
+  {
+    "acronym": "API",
+    "description": "Application Programming Interface"
+  },
+  {
+    "acronym": "AWS",
+    "description": "Amazon Web Services"
+  },
+  {
+    "acronym": "CDN",
+    "description": "Content Delivery Network"
+  },
+  {
+    "acronym": "CLI",
+    "description": "Command Line Interface"
+  },
+  {
+    "acronym": "CI",
+    "description": "Continuous Integration"
+  },
+  {
+    "acronym": "CD",
+    "description": "Continuous Delivery / Deployment"
+  },
+  {
+    "acronym": "CPU",
+    "description": "Central Processing Unit"
+  },
+  {
+    "acronym": "DB",
+    "description": "Database"
+  },
+  {
+    "acronym": "DBMS",
+    "description": "Database Management System"
+  },
+  {
+    "acronym": "DNS",
+    "description": "Domain Name System"
+  },
+  {
+    "acronym": "DOM",
+    "description": "Document Object Model"
+  },
+  {
+    "acronym": "DTO",
+    "description": "Data Transfer Object"
+  },
+  {
+    "acronym": "EBS",
+    "description": "Elastic Block Store"
+  },
+  {
+    "acronym": "EC2",
+    "description": "Elastic Compute Cloud"
+  },
+  {
+    "acronym": "ECS",
+    "description": "Elastic Container Service"
+  },
+  {
+    "acronym": "EKS",
+    "description": "Elastic Kubernetes Service"
+  },
+  {
+    "acronym": "ELB",
+    "description": "Elastic Load Balancer"
+  },
+  {
+    "acronym": "ETL",
+    "description": "Extract, Transform, Load"
+  },
+  {
+    "acronym": "FaaS",
+    "description": "Function as a Service"
+  },
+  {
+    "acronym": "FTW",
+    "description": "For The Win"
+  },
+  {
+    "acronym": "GCP",
+    "description": "Google Cloud Platform"
+  },
+  {
+    "acronym": "GPU",
+    "description": "Graphics Processing Unit"
+  },
+  {
+    "acronym": "HTML",
+    "description": "HyperText Markup Language"
+  },
+  {
+    "acronym": "HTTP",
+    "description": "HyperText Transfer Protocol"
+  },
+  {
+    "acronym": "HTTPS",
+    "description": "HTTP Secure"
+  },
+  {
+    "acronym": "IAM",
+    "description": "Identity and Access Management"
+  },
+  {
+    "acronym": "IaaS",
+    "description": "Infrastructure as a Service"
+  },
+  {
+    "acronym": "IDE",
+    "description": "Integrated Development Environment"
+  },
+  {
+    "acronym": "IOPS",
+    "description": "Input/Output Operations Per Second"
+  },
+  {
+    "acronym": "IP",
+    "description": "Internet Protocol"
+  },
+  {
+    "acronym": "ISP",
+    "description": "Internet Service Provider"
+  },
+  {
+    "acronym": "IT",
+    "description": "Information Technology"
+  },
+  {
+    "acronym": "JSON",
+    "description": "JavaScript Object Notation"
+  },
+  {
+    "acronym": "JWT",
+    "description": "JSON Web Token"
+  },
+  {
+    "acronym": "KPI",
+    "description": "Key Performance Indicator"
+  },
+  {
+    "acronym": "KMS",
+    "description": "Key Management Service"
+  },
+  {
+    "acronym": "K8s",
+    "description": "Kubernetes"
+  },
+  {
+    "acronym": "LTS",
+    "description": "Long Term Support"
+  },
+  {
+    "acronym": "ML",
+    "description": "Machine Learning"
+  },
+  {
+    "acronym": "MVP",
+    "description": "Minimum Viable Product"
+  },
+  {
+    "acronym": "NAT",
+    "description": "Network Address Translation"
+  },
+  {
+    "acronym": "NFS",
+    "description": "Network File System"
+  },
+  {
+    "acronym": "NoSQL",
+    "description": "Non-relational SQL"
+  },
+  {
+    "acronym": "OIDC",
+    "description": "OpenID Connect"
+  },
+  {
+    "acronym": "OS",
+    "description": "Operating System"
+  },
+  {
+    "acronym": "OSS",
+    "description": "Open Source Software"
+  },
+  {
+    "acronym": "PaaS",
+    "description": "Platform as a Service"
+  },
+  {
+    "acronym": "PCI",
+    "description": "Payment Card Industry"
+  },
+  {
+    "acronym": "PDF",
+    "description": "Portable Document Format"
+  },
+  {
+    "acronym": "PKI",
+    "description": "Public Key Infrastructure"
+  },
+  {
+    "acronym": "PoC",
+    "description": "Proof of Concept"
+  },
+  {
+    "acronym": "QoS",
+    "description": "Quality of Service"
+  },
+  {
+    "acronym": "RAM",
+    "description": "Random Access Memory"
+  },
+  {
+    "acronym": "RDS",
+    "description": "Relational Database Service"
+  },
+  {
+    "acronym": "REST",
+    "description": "Representational State Transfer"
+  },
+  {
+    "acronym": "RPC",
+    "description": "Remote Procedure Call"
+  },
+  {
+    "acronym": "RTFM",
+    "description": "Read The Fine Manual"
+  },
+  {
+    "acronym": "S3",
+    "description": "Simple Storage Service"
+  },
+  {
+    "acronym": "SaaS",
+    "description": "Software as a Service"
+  },
+  {
+    "acronym": "SDK",
+    "description": "Software Development Kit"
+  },
+  {
+    "acronym": "SEO",
+    "description": "Search Engine Optimization"
+  },
+  {
+    "acronym": "SG",
+    "description": "Security Group"
+  },
+  {
+    "acronym": "SLA",
+    "description": "Service Level Agreement"
+  },
+  {
+    "acronym": "SMTP",
+    "description": "Simple Mail Transfer Protocol"
+  },
+  {
+    "acronym": "SPA",
+    "description": "Single Page Application"
+  },
+  {
+    "acronym": "SQL",
+    "description": "Structured Query Language"
+  },
+  {
+    "acronym": "SSH",
+    "description": "Secure Shell"
+  },
+  {
+    "acronym": "SSL",
+    "description": "Secure Sockets Layer"
+  },
+  {
+    "acronym": "SSO",
+    "description": "Single Sign-On"
+  },
+  {
+    "acronym": "TCO",
+    "description": "Total Cost of Ownership"
+  },
+  {
+    "acronym": "TLS",
+    "description": "Transport Layer Security"
+  },
+  {
+    "acronym": "TTL",
+    "description": "Time to Live"
+  },
+  {
+    "acronym": "TLD",
+    "description": "Top-Level Domain"
+  },
+  {
+    "acronym": "UI",
+    "description": "User Interface"
+  },
+  {
+    "acronym": "UID",
+    "description": "User Identifier"
+  },
+  {
+    "acronym": "URL",
+    "description": "Uniform Resource Locator"
+  },
+  {
+    "acronym": "UUID",
+    "description": "Universally Unique Identifier"
+  },
+  {
+    "acronym": "UX",
+    "description": "User Experience"
+  },
+  {
+    "acronym": "VM",
+    "description": "Virtual Machine"
+  },
+  {
+    "acronym": "VPC",
+    "description": "Virtual Private Cloud"
+  },
+  {
+    "acronym": "VPN",
+    "description": "Virtual Private Network"
+  },
+  {
+    "acronym": "VSCode",
+    "description": "Visual Studio Code"
+  },
+  {
+    "acronym": "VTL",
+    "description": "Velocity Template Language"
+  },
+  {
+    "acronym": "WAF",
+    "description": "Web Application Firewall"
+  },
+  {
+    "acronym": "WAN",
+    "description": "Wide Area Network"
+  },
+  {
+    "acronym": "XSS",
+    "description": "Cross Site Scripting"
+  },
+  {
+    "acronym": "YAML",
+    "description": "YAML Ain't Markup Language"
+  },
+  {
+    "acronym": "2FA",
+    "description": "Two Factor Authentication"
+  },
+  {
+    "acronym": "ACL",
+    "description": "Access Control List"
+  },
+  {
+    "acronym": "AJAX",
+    "description": "Asynchronous JavaScript and XML"
+  },
+  {
+    "acronym": "ALB",
+    "description": "Application Load Balancer"
+  },
+  {
+    "acronym": "BEM",
+    "description": "Block Element Modifier"
+  },
+  {
+    "acronym": "CI/CD",
+    "description": "Continuous Integration / Continuous Deployment"
+  },
+  {
+    "acronym": "CRT",
+    "description": "Cathode Ray Tube"
+  },
+  {
+    "acronym": "CSR",
+    "description": "Client-Side Rendering"
+  },
+  {
+    "acronym": "DAC",
+    "description": "Discretionary Access Control"
+  },
+  {
+    "acronym": "DDoS",
+    "description": "Distributed Denial of Service"
+  },
+  {
+    "acronym": "DI",
+    "description": "Dependency Injection"
+  },
+  {
+    "acronym": "DNSSEC",
+    "description": "Domain Name System Security Extensions"
+  },
+  {
+    "acronym": "DSL",
+    "description": "Domain Specific Language"
+  },
+  {
+    "acronym": "DX",
+    "description": "Developer Experience"
+  },
+  {
+    "acronym": "EOL",
+    "description": "End of Life"
+  },
+  {
+    "acronym": "EOF",
+    "description": "End of File"
+  },
+  {
+    "acronym": "FQDN",
+    "description": "Fully Qualified Domain Name"
+  },
+  {
+    "acronym": "FTL",
+    "description": "Faster Than Light"
+  },
+  {
+    "acronym": "FTP",
+    "description": "File Transfer Protocol"
+  },
+  {
+    "acronym": "GIL",
+    "description": "Global Interpreter Lock"
+  },
+  {
+    "acronym": "GitHub",
+    "description": "A code hosting platform for version control and collaboration"
+  },
+  {
+    "acronym": "GUI",
+    "description": "Graphical User Interface"
+  },
+  {
+    "acronym": "HCL",
+    "description": "HashiCorp Configuration Language"
+  },
+  {
+    "acronym": "IIFE",
+    "description": "Immediately Invoked Function Expression"
+  },
+  {
+    "acronym": "JWT",
+    "description": "JSON Web Token"
+  },
+  {
+    "acronym": "KDF",
+    "description": "Key Derivation Function"
+  },
+  {
+    "acronym": "LCD",
+    "description": "Liquid Crystal Display"
+  },
+  {
+    "acronym": "LIFO",
+    "description": "Last In First Out"
+  },
+  {
+    "acronym": "MFA",
+    "description": "Multi-Factor Authentication"
+  },
+  {
+    "acronym": "NPM",
+    "description": "Node Package Manager"
+  },
+  {
+    "acronym": "Node.js",
+    "description": "JavaScript runtime built on Chrome's V8 engine"
+  },
+  {
+    "acronym": "NVMe",
+    "description": "Non-Volatile Memory Express"
+  },
+  {
+    "acronym": "OID",
+    "description": "Object Identifier"
+  },
+  {
+    "acronym": "ORM",
+    "description": "Object-Relational Mapping"
+  },
+  {
+    "acronym": "OTP",
+    "description": "One-Time Password"
+  },
+  {
+    "acronym": "POC",
+    "description": "Proof of Concept"
+  },
+  {
+    "acronym": "PWA",
+    "description": "Progressive Web App"
+  },
+  {
+    "acronym": "QoE",
+    "description": "Quality of Experience"
+  },
+  {
+    "acronym": "RBAC",
+    "description": "Role-Based Access Control"
+  },
+  {
+    "acronym": "SFTP",
+    "description": "SSH File Transfer Protocol"
+  },
+  {
+    "acronym": "SRP",
+    "description": "Secure Remote Password"
+  },
+  {
+    "acronym": "TDD",
+    "description": "Test-Driven Development"
+  },
+  {
+    "acronym": "UDP",
+    "description": "User Datagram Protocol"
+  },
+  {
+    "acronym": "UML",
+    "description": "Unified Modeling Language"
+  },
+  {
+    "acronym": "WYSIWYG",
+    "description": "What You See Is What You Get"
+  },
+  {
+    "acronym": "X-Ray",
+    "description": "AWS distributed tracing service"
+  },
+  {
+    "acronym": "ZKP",
+    "description": "Zero-Knowledge Proof"
+  }
+]
