@@ -40,9 +40,34 @@ npm install -g impactify
 
 ### Command-Line Usage
 
-Once installed globally, you can run `impactify` directly from the command line to generate impact statements based on input prompts.
+Once `impactify` is installed globally, you can run it from the command line to quickly generate impact statements based on your inputs. The tool will prompt you for key details like:
 
-This command will guide you through entering the details for your impact statement, including the action, business impact, specific impact, and goal alignment.
+- **Project**: Name of the feature or project.
+- **Action**: What you did, from technical tasks to key improvements.
+- **Business Impact**: How your work improved or benefited the company (e.g., scaling, efficiency, or revenue).
+- **Specific Impact**: The measurable results you achieved, such as time saved, efficiency gained, or financial impact.
+- **Goal Alignment & Financials**: How your work connects to specific company goals or bottom-line results (e.g., OKRs, cost savings).
+
+To get started, just type:
+
+```bash
+impactify
+```
+
+Follow the prompts, and `impactify` will generate a perfectly formatted impact statement ready for use in reports, presentations, or your next job application.
+
+#### Inputs
+
+- **Project**: `Microservices Refactor`
+- **Action**: `Refactored legacy monolithic app into a set of microservices using Node.js and Docker`
+- **Business Impact**: `Improved system scalability and maintainability, allowing faster feature deployment`
+- **Specific Impact**: `Reduced app deployment time by 60% and improved system uptime by 99.9%`
+- **Goal Alignment & Financials**: `OKR 2.3, saved $50k annually in infrastructure costs by optimizing resource usage`
+
+#### Output
+
+Refactored legacy monolithic app into a set of microservices using Node.js and Docker, which improved system scalability and maintainability, resulting in reduced app deployment time by 60% and improved system uptime by 99.9%. This aligned with OKR 2.3, saved $50k annually in infrastructure costs by optimizing resource usage.
+
 
 ## Contributing
 
