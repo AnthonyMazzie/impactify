@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import readline from 'node:readline/promises';
 import { stdin as input, stdout as output } from 'node:process';
 import fs from 'node:fs';
@@ -218,15 +220,25 @@ async function main() {
 	);
 
 	const answers: ImpactAnswers = {
-		project: await prompt('What is the name of the project or feature? (optional)', false),
-		action: await prompt('What exactly did you do or build?'),
-		businessImpact: await prompt('How did this help the business or product?'),
-		specificImpact: await prompt('What measurable change did it produce?'),
+		project: await prompt(
+			'What is the name of the project or feature? (optional)\nEX: Billing System Upgrade\n > ',
+			false
+		),
+		action: await prompt(
+			'\nWhat exactly did you do or build? (required)\nEX: Refactored legacy billing codebase to use modular architecture\n > '
+		),
+		businessImpact: await prompt(
+			'\nHow did this help the business or product? (required)\nEX: Improved maintainability and reduced bug rate\n > '
+		),
+		specificImpact: await prompt(
+			'\nWhat measurable change did it produce? (required)\nEX: Reduced billing errors by 40%\n > '
+		),
 		goalAlignmentAndFinancials: await prompt(
-			'What goal or financial impact was this tied to? (e.g., "OKR 1.5, saved $10,000")',
-			false,
+			'\nWhat goal or financial impact was this tied to? (optional)\nEX: OKR 2.3, saved $50,000 annually\n > ',
+			false
 		),
 	};
+
 
 	const statement = generateImpactStatement(answers);
 

@@ -1,10 +1,10 @@
 {
     "name": "impactify",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "A CLI tool to help engineers generate high-impact performance review or resume statements using a 5-layer framework.",
     "type": "module",
     "bin": {
-        "impactify": "./dist/index.js"
+        "impactify": "./dist/src/index.js"
     },
     "scripts": {
         "build": "tsc",
