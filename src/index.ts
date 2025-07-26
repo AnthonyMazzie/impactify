@@ -1,15 +1,19 @@
 #!/usr/bin/env node
 
 import readline from 'node:readline/promises';
-import { stdin as input, stdout as output } from 'node:process';
+import {stdin as input, stdout as output} from 'node:process';
 import fs from 'node:fs';
-import path from 'node:path';
+import path, {dirname, join} from 'node:path';
+import {fileURLToPath} from 'node:url';
 import clipboardy from 'clipboardy';
-import { type AcronymEntry, type ImpactAnswers } from './types.js';
-
-const acronymsPath = path.join(process.cwd(), 'src', 'acronyms.json');
+import {type AcronymEntry, type ImpactAnswers} from './types.js';
 
 let acronymEntries: AcronymEntry[] = [];
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const acronymsPath = join(__dirname, 'acronyms.json');
 
 try {
 	const raw = fs.readFileSync(acronymsPath, 'utf8');
@@ -61,7 +65,6 @@ function toSentenceCasePreservingAcronyms(text: string): string {
 		.join(' ');
 }
 
-
 function capitalize(word: string): string {
 	return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
 }
@@ -101,6 +104,7 @@ function validateFieldLength(field: string, maxLength: number): string {
 	if (field.length > maxLength) {
 		return `This field exceeds the maximum length of ${maxLength} characters. Please reformat it.`;
 	}
+
 	return '';
 }
 
@@ -140,7 +144,7 @@ function generateImpactStatement(answers: ImpactAnswers): string {
 
 	// Format specificImpact to start with a verb if applicable
 	const startsWithVerb = /^(increases|reduces|decreases|improves|lowers|cuts|saves|boosts|prevents|eliminates|fixes)/i.test(specificImpact);
-	// const specificImpactFormatted = startsWithVerb ? specificImpact : `resulting in ${specificImpact.toLowerCase()}`;
+	// Const specificImpactFormatted = startsWithVerb ? specificImpact : `resulting in ${specificImpact.toLowerCase()}`;
 	// Capitalize the first letter of specificImpact if it doesn't start with a verb
 	const specificImpactFormatted = startsWithVerb
 		? specificImpact
@@ -188,8 +192,6 @@ function generateImpactStatement(answers: ImpactAnswers): string {
 	return sentence;
 }
 
-
-
 function saveToMarkdown(filename: string, content: string) {
 	const filePath = path.join(process.cwd(), `${filename}.md`);
 	fs.writeFileSync(filePath, `# Impact Statement\n\n${content}\n`);
@@ -202,13 +204,13 @@ function saveToJson(
 	fullStatement: string,
 ) {
 	const filePath = path.join(process.cwd(), `${filename}.json`);
-	const output = { ...answers, impactStatement: fullStatement };
+	const output = {...answers, impactStatement: fullStatement};
 	fs.writeFileSync(filePath, JSON.stringify(output, null, 2));
 	console.log(`✔ Saved to: ${filePath}`);
 }
 
 async function prompt(question: string, required = true): Promise<string> {
-	const rl = readline.createInterface({ input, output });
+	const rl = readline.createInterface({input, output});
 	const answer = await rl.question(`${question} `);
 	rl.close();
 	return required && !answer.trim() ? prompt(question, required) : answer.trim();
@@ -222,23 +224,22 @@ async function main() {
 	const answers: ImpactAnswers = {
 		project: await prompt(
 			'What is the name of the project or feature? (optional)\nEX: Billing System Upgrade\n > ',
-			false
+			false,
 		),
 		action: await prompt(
-			'\nWhat exactly did you do or build? (required)\nEX: Refactored legacy billing codebase to use modular architecture\n > '
+			'\nWhat exactly did you do or build? (required)\nEX: Refactored legacy billing codebase to use modular architecture\n > ',
 		),
 		businessImpact: await prompt(
-			'\nHow did this help the business or product? (required)\nEX: Improved maintainability and reduced bug rate\n > '
+			'\nHow did this help the business or product? (required)\nEX: Improved maintainability and reduced bug rate\n > ',
 		),
 		specificImpact: await prompt(
-			'\nWhat measurable change did it produce? (required)\nEX: Reduced billing errors by 40%\n > '
+			'\nWhat measurable change did it produce? (required)\nEX: Reduced billing errors by 40%\n > ',
 		),
 		goalAlignmentAndFinancials: await prompt(
 			'\nWhat goal or financial impact was this tied to? (optional)\nEX: OKR 2.3, saved $50,000 annually\n > ',
-			false
+			false,
 		),
 	};
-
 
 	const statement = generateImpactStatement(answers);
 
@@ -278,4 +279,4 @@ if (process.env.VITEST !== 'true') {
 	await main();
 }
 
-export { generateImpactStatement };
+export {generateImpactStatement};

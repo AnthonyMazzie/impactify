@@ -7,6 +7,7 @@
 ![npm](https://img.shields.io/npm/v/impactify)
 ![npm](https://img.shields.io/npm/dt/impactify)
 
+
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Features](#features)
@@ -16,9 +17,9 @@
 6. [License](#license)
 
 ## Introduction
-Let’s be honest, engineers are great at building things, but when it comes to explaining the impact of what we've built, it’s not always easy. We know we’ve improved performance, saved time, or reduced costs, but putting that into words that actually make sense to others? That’s the tricky part. Just tell it what you did, how it helped the business, and the results you achieved. It’ll clean everything up and format it perfectly. No worrying about punctuation, capitalization, or handling acronyms.
+Let’s be honest, engineers are great at building things, but when it comes to explaining the impact of what we've built, it’s not always easy. We know we’ve improved performance, saved time, or reduced costs, but putting that into words that actually make sense to others? That’s the tricky part.
 
-Plus, once you have your statement, you can export it in multiple formats: print it out, save it to JSON, Markdown, or just copy it directly to your clipboard for easy sharing.
+Just tell `impactify` what you did, how it helped the business, and the results you achieved. It’ll clean everything up and format it, then you can export it in multiple formats: print it out, save it to JSON, Markdown, or just copy it directly to your clipboard for easy sharing.
 
 ## Features
 - **Automatic Formatting**: You give it the details, and impactify makes sure everything’s formatted right—punctuation, capitalization, and all.
@@ -68,7 +69,6 @@ Follow the prompts, and `impactify` will generate a perfectly formatted impact s
 #### Output
 
 Refactored legacy monolithic app into a set of microservices using Node.js and Docker, which improved system scalability and maintainability, resulting in reduced app deployment time by 60% and improved system uptime by 99.9%. This aligned with OKR 2.3, saved $50k annually in infrastructure costs by optimizing resource usage.
-
 
 ## Contributing
 
